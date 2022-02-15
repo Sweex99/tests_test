@@ -7,7 +7,7 @@ jobs:
       - image: cimg/ruby:2.7.1
     steps:
       - run: echo 'built'
-      - run: echo $test_variable
+      - run: echo << pipeline.parameters.test_variable >>
 
 # Orchestrate our job run sequence
 workflows:
