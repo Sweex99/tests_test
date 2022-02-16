@@ -2,7 +2,19 @@ version: 2.1
 parameters:
   test_variable:
     type: string
-    default: "latest"
+    default: "test_variable"
+  testomatio:
+    type: string
+    default: "testomatio"
+  testomatio_url:
+    type: string
+    default: "testomatio_url"
+  run:
+    type: string
+    default: "run"
+  block:
+    type: string
+    default: "block"
 
 # Define the jobs we want to run for this project
 jobs:
